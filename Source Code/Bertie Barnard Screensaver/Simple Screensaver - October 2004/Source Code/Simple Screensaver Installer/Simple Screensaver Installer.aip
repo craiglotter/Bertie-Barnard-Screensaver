@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" version="1.9" modules="professional" RootPath=".">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="ProductName" Value="Simple Screensaver 1.0"/>
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPCONTACT" Value="0833085018"/>
+    <ROW Property="BannerBitmap" Value="installer_background.jpg"/>
+    <ROW Property="ProductVersion" Value="1.0.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS"/>
+    <ROW Property="UpgradeCode" Value="{141ED4CF-0AAE-44C3-8B80-BE9E90256220}"/>
+    <ROW Property="ProductCode" Value="{5047D9CE-130F-4DEF-B403-F02AFB16054F}"/>
+    <ROW Property="ARPPRODUCTICON" Value="controlPanelIcon_1.exe"/>
+    <ROW Property="DialogBitmap" Value="installer_background_dialog.jpg"/>
+    <ROW Property="Manufacturer" Value="Craig Lotter"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="TARGETDIR" Directory_Parent="" DefaultDir="SourceDir"/>
+    <ROW Directory="WindowsFolder" Directory_Parent="TARGETDIR" DefaultDir="Window~1|WindowsFolder" IsPseudoRoot="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="Interop.ShockwaveFlashObjects.dll" ComponentId="{5E48DBC7-92B3-4217-943F-C3479275924B}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="Interop.ShockwaveFlashObjects.dll" FullKeyPath="TARGETDIR\Interop.ShockwaveFlashObjects.dll"/>
+    <ROW Component="Interop.ShockwaveFlashObjects.dll_1" ComponentId="{2DBFF87C-7256-4E96-96E1-CC8FC9E7D044}" Directory_="WindowsFolder" Attributes="0" Condition="" KeyPath="Interop.ShockwaveFlashObjects.dll_1" FullKeyPath="WindowsFolder\Interop.ShockwaveFlashObjects.dll"/>
+    <ROW Component="Simple_Screensaver.scr" ComponentId="{1CCCF9DC-DCCC-4391-936D-7834E15AF8E7}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="Simple_Screensaver.swf" FullKeyPath="TARGETDIR"/>
+    <ROW Component="Simple_Screensaver.scr_1" ComponentId="{7FBC2F5D-A52B-4A59-9E1E-279885074F59}" Directory_="WindowsFolder" Attributes="0" Condition="" KeyPath="Simple_Screensaver.swf_1" FullKeyPath="WindowsFolder"/>
+    <ROW Component="AxInterop.ShockwaveFlashObjects.dll" ComponentId="{9EE62D16-DAF3-49EE-B1D8-B439C7728EA0}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="AxInterop.ShockwaveFlashObjects.dll" FullKeyPath="TARGETDIR\AxInterop.ShockwaveFlashObjects.dll"/>
+    <ROW Component="AxInterop.ShockwaveFlashObjects.dll_1" ComponentId="{833E895E-FCE0-4451-BFF2-F3E035521D83}" Directory_="WindowsFolder" Attributes="0" Condition="" KeyPath="AxInterop.ShockwaveFlashObjects.dll_1" FullKeyPath="WindowsFolder\AxInterop.ShockwaveFlashObjects.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Feature_Parent="" Title="MainFeature" Description="Description" Display="2" Level="1" Directory_="TARGETDIR" Attributes="0" Components="AxInterop.ShockwaveFlashObjects.dll Interop.ShockwaveFlashObjects.dll Simple_Screensaver.scr AxInterop.ShockwaveFlashObjects.dll_1 Interop.ShockwaveFlashObjects.dll_1 Simple_Screensaver.scr_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="Bertie_Barnard_Screensaver.scr" Component_="Simple_Screensaver.scr" FileName="Bertie~1.scr|Bertie_Barnard_Screensaver.scr" Version="" Language="" Attributes="" SourcePath="..\Simple Screensaver\Release\Bertie_Barnard_Screensaver.scr" SelfReg="false"/>
+    <ROW File="Bertie_Barnard_Screensaver.scr_1" Component_="Simple_Screensaver.scr_1" FileName="Bertie~1.scr|Bertie_Barnard_Screensaver.scr" Version="" Language="" Attributes="" SourcePath="..\Simple Screensaver\Release\Bertie_Barnard_Screensaver.scr" SelfReg="false"/>
+    <ROW File="Interop.ShockwaveFlashObjects.dll" Component_="Interop.ShockwaveFlashObjects.dll" FileName="Intero~1.dll|Interop.ShockwaveFlashObjects.dll" Version="" Language="" Attributes="" SourcePath="..\Simple Screensaver\Release\Interop.ShockwaveFlashObjects.dll" SelfReg="false"/>
+    <ROW File="Interop.ShockwaveFlashObjects.dll_1" Component_="Interop.ShockwaveFlashObjects.dll_1" FileName="Intero~1.dll|Interop.ShockwaveFlashObjects.dll" Version="" Language="" Attributes="" SourcePath="..\Simple Screensaver\Release\Interop.ShockwaveFlashObjects.dll" SelfReg="false"/>
+    <ROW File="Simple_Screensaver.swf" Component_="Simple_Screensaver.scr" FileName="Simple~1.swf|Simple_Screensaver.swf" Version="" Language="" Attributes="" SourcePath="..\Simple Screensaver\Release\Simple_Screensaver.swf" SelfReg="false"/>
+    <ROW File="Simple_Screensaver.swf_1" Component_="Simple_Screensaver.scr_1" FileName="Simple~1.swf|Simple_Screensaver.swf" Version="" Language="" Attributes="" SourcePath="..\Simple Screensaver\Release\Simple_Screensaver.swf" SelfReg="false"/>
+    <ROW File="AxInterop.ShockwaveFlashObjects.dll" Component_="AxInterop.ShockwaveFlashObjects.dll" FileName="AxInte~1.dll|AxInterop.ShockwaveFlashObjects.dll" Version="" Language="" Attributes="" SourcePath="..\Simple Screensaver\Release\AxInterop.ShockwaveFlashObjects.dll" SelfReg="false"/>
+    <ROW File="AxInterop.ShockwaveFlashObjects.dll_1" Component_="AxInterop.ShockwaveFlashObjects.dll_1" FileName="AxInte~1.dll|AxInterop.ShockwaveFlashObjects.dll" Version="" Language="" Attributes="" SourcePath="..\Simple Screensaver\Release\AxInterop.ShockwaveFlashObjects.dll" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR" Type="307" Source="TARGETDIR" Target="[ProgramFilesFolder][ProductName]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="UpgradeCode" VersionMin="" VersionMax="ProductVersion" Language="" Attributes="1025" Remove=""/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMergeModsComponent">
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="controlPanelIcon_1.exe" SourcePath="..\Simple Screensaver\Images\UCT_175_Logo.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="installer_background.jpg" SourcePath="Images\installer_background.jpg"/>
+    <ROW Name="installer_background_dialog.jpg" SourcePath="Images\installer_background_dialog.jpg"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ATTRIBUTE name="Start" value="WelcomeDlg FolderDlg VerifyReadyDlg"/>
+    <ATTRIBUTE name="Progress" value="ProgressDlg"/>
+    <ATTRIBUTE name="End" value="ExitDialog"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMediaComponent">
+    <ATTRIBUTE name="InstallationType" value="1"/>
+    <ATTRIBUTE name="MediaSize" value="0"/>
+    <ATTRIBUTE name="Compress" value="1"/>
+    <ATTRIBUTE name="Package" value="6"/>
+    <ATTRIBUTE name="PackageName" value="Release\Simple Screensaver Installer"/>
+    <ATTRIBUTE name="IconPath" value="..\Simple Screensaver\Images\UCT_175_Logo.ico?0"/>
+  </COMPONENT>
+</DOCUMENT>
